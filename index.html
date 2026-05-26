@@ -7,52 +7,51 @@
     <!--CSS interno-->
     <style>
         *{
-         margin: 0;
-         padding: 0;
-         box-shadow: border-box;
+        margin: 0;
+        padding: 0;
+        box-shadow: border-box;
         }
 
         body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          background-color: #f8fafa;
-          color: #333333;
-          line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafa;
+            color: #333333;
+            line-height: 1.6;
         }
 
         h1, h2, h3 {
-         color:#1a1a1a ;
-         margin-bottom: 1rem;
+            color:#1a1a1a ;
+            margin-bottom: 1rem;
         }
 
         p {
-          margin-bottom: 1rem;
+            margin-bottom: 1rem;
         }
 
         a {
-          text-decoration: none;
-          color: inherit;
+            text-decoration: none;
+            color: inherit;
         }
 
         ul {
-           list-style: none;
+            list-style: none;
         }
 
         .cabecalhoPrincipal {
-           background-color: #ffffff;
-           padding: 1.5rem 5%;
-           box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            box-shadow: 0 3px 8px rgba (0, 0, 0, 0.5);
+            display: flex;
+            justify-items: space-between;
+            align-items: center;
         }
         
         
 
-        .titulo{
-         font-size: 1.8rem;
-         font-weight: bold;
-         color: #d32f2f;
+            .titulo{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d32f2f;
         }
 
         .listaNavegacao {
@@ -60,35 +59,51 @@
             gap: 2rem;
         }
 
-         .linkNav {
+        .linkNav{
             font-weight: 500;
             transition: color 0.3s ease;
-         }
+        }
 
-         .link:hover{
-           color: #d32f2f;
-         }
+        .linkNav:hover{
+            color: #d32f2f;
+        }
 
-    </style>
-</head>
-<body>
-   <!-- cabeçalho do site -->
+        .botaoPrincipal{
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: backgraund-color 0.3s ease;
+        }
+
+        .botaoPrincipal:hover{
+        background-color: #b71b1b;
+        color: #ffffff;
+        }
+
+        </style>
+    </head>
+    <body>
+    <!-- cabeçalho do site -->
     <header id="header"class="cabecalhoPrincipal">
-        <div id="logo">
+            <div id="logo">
             <h1 class="titulo">Compasso Musical</h1>
-        </div>
+            </div>
         <nav id="nav">
             <ul class="listaNavegacao">
-                <li>
+                    <li>
                     <a href="#hero" class="class="linkNav">Inicio</a>
-                </li>
-                <li>
+                    </li>
+                <li>    
                     <a href="#sobre" class="class="linkNav">Sobre</a>
-                </li>
-                <li>
+                    </li>
+                    <li>
                     <a href="#instrumentos" class="class="linkNav">instrumentos</a>
-                </li>
-                <li>
+                    </li>
+                    <li>
                     <a href="#depoimentos" class="class="linkNav">Depoimentos</a>
                 </li>
                 <li>
@@ -100,18 +115,19 @@
 
     <!-- conteudp principal-->
      <main>
-        <section id="hero">
-            <h2>O som da sua vida começa aqui</h2>
-            <p>
+        <section id="hero" class="secaoHero" style="background-color: #eceff1; text-align: center; padding: 5rem 2rem; border-bottom: 4px solid #d32f2f; ">
+            <h2 style="font-size: 3rem; color: #1a1a1a; ">O som da sua vida começa aqui</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto; ">
                 Encontre as melhores marcas de violino, trompetes ou violoes 
             </p>
             <img 
                 src="banda de rock.jpg" 
                 alt="banda de rock num show usando os instrumentos musicais da compasso musical"
                 width="600"
+                style="border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);"
             >
             <br><br>
-            <a href="">Ver nossas ofertas</a>
+            <a href="#"  class="botaoPrincipal">Ver nossas ofertas</a>
         </section>
 
         <!--Seçao instrumentos-->
@@ -127,7 +143,7 @@
         </ul>
          </section>
 
-         <!--seçao instrumentos-->
+         <!--seçao produtos-->
          <section id="produtos">
             <h2>catalogo</h2>
             <article>
@@ -192,7 +208,7 @@
          </section>
 
          <!--seção contatatos-->
-         <sections id="contatos">
+         <sections id="#contatos">
           <h2>Fale conosco</h2>
           <p>Tem duvidas sobre algum instrumento? Mande uma mensagem ou venha nos visitar.</p>
           <address>
@@ -223,12 +239,12 @@
             <textarea name="mensagem" id="mensagem" rows="10"placecholder="digite sua mensagem"></textarea>
             <br><br>
             <button type="submit">Enviar Mensagem</button>
-          </form>
-         </sections>
-     </main>
+        </form>
+        </sections>
+    </main>
 
-     <!-- rodapé do site-->
-      <footer>
+    <!-- rodapé do site-->
+    <footer>
         <div>
             <h2>Compasso musical</h2>
             <p>
@@ -275,14 +291,14 @@
         <div>
             <h3>Siga-Nos</h3>
             <div>
-                <a href="">
-                   <img src="instagram.png.png" alt="instagram"> 
+                <a href="instagram.com">
+                <img src="instagram.png.png" alt="instagram"> 
                 </a>
-                <a href="">
-                   <img src="Youtube.png.png" alt="Youtube"> 
+                <a href="youtube.com">
+                <img src="Youtube.png.png" alt="Youtube"> 
                 </a>
-                <a href="">
-                   <img src="facebook.png.png" alt="Fecebook"> 
+                <a href="fecebook.com">
+                <img src="facebook.png.png" alt="Fecebook"> 
                 </a>
 
             </div>
@@ -299,6 +315,6 @@
         <p>
             Copyright &copy; 2026 compaso musical - todos os direitos reservados. site desenvolvidos por Luccas Paulo.
         </p>
-      </footer>
+    </footer>
     </body>
 </html>
